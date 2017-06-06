@@ -1,8 +1,11 @@
-
+html{
+	position:relative;
+	min-height: 100%;
+}
 body{
 	width:958px;
-	margin:auto;
 	background-image: url("../images/concrete-texture.png");
+	margin:0 auto 1000px;
 }
 nav{
 	float:right;
@@ -20,7 +23,13 @@ nav{
 	border-width: 2px;
 	width:100%;
 	height:100px;
-	margin-bottom:20px;
+	margin:0 auto 20px;
+	position:absolute;
+	clear:both;
+	top:0;
+	left:0;
+
+
 }
 .Logo{
 	background-color: #4aaaa5;
@@ -29,8 +38,8 @@ nav{
 	font-family: 'Georgia', 'Times', Times New Roman, serif;
 	font-weight:bold;
 	font-size:24px;
-	width:30%;
-	margin-left:20px; 
+	width:300px;
+	margin-left:15%; 
 	float:left;
 	line-height: 100px;
 }
@@ -43,7 +52,6 @@ section{
 	border-style:solid;
 	border-color:#dddddd;
 	border-width: 1px;
-	margin-left: 20px;
 	width:648px;
 
 }
@@ -54,13 +62,13 @@ aside{
 	border-width: 1px;
 	width:270px;
 	float:right;
-
+	margin:200px auto;
 
 }
 .AboutSection, .PortfolioSection, .ContactSection{
 	float:left;
 	color:#777777;
-	
+	margin:200px auto;
 } 
 a:link{
 	text-decoration: none;
@@ -154,3 +162,19 @@ div.desc {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	
 }
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #777777;
+    color:#cccccc;
+	clear:both;
+	text-align:center;
+	line-height: 100px;
+	border-top-color:#4aaaa5;
+	border-style:solid;
+	border-width: 4px;
+}
+
