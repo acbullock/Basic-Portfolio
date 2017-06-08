@@ -1,11 +1,14 @@
 html{
 	position:relative;
 	min-height: 100%;
+
 }
 body{
 	width:960px;
 	background-image: url("../images/concrete-texture.png");
 	margin:0 auto;
+	height:auto;
+	min-height:1000px;
 	
 }
 nav{
@@ -24,7 +27,7 @@ nav{
 	border-width: 2px;
 	max-width:100%;
 	height:100px;
-	margin:0 auto;
+	margin:0 auto 20px;
 	
 
 
@@ -36,8 +39,7 @@ nav{
 	font-family: 'Georgia', 'Times', Times New Roman, serif;
 	font-weight:bold;
 	font-size:24px;
-	width:300px;
-	margin-left:5%; 
+	width:250px;
 	float:left;
 	line-height: 100px;
 }
@@ -58,9 +60,10 @@ aside{
 	border-style:solid;
 	border-color:#dddddd;
 	border-width: 1px;
-	width:270px;
+	min-width:268px;
 	float:right;
 	margin:20px auto;
+	max-width: 270px;
 
 }
 .AboutSection, .PortfolioSection, .ContactSection{
@@ -85,8 +88,10 @@ a:link{
 	border-radius: 6px;
 	margin:0 20px 20px 20px;
 	float:left;
+	height:150px;
+	width:150px;
 }
-#Bio{
+.Bio{
 	color:#777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	margin:20px;
@@ -123,10 +128,12 @@ input{
 	color:#777777;
 	width:100%;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	padding-left:10px
-	margin:20px 0;
 	height:25px;
-	padding:0 -20px;
+	padding:5px;
+	box-sizing: border-box;
+	margin-top:10px;
+
+	
 }
 #MessageInput{
 	height:250px;
@@ -134,19 +141,24 @@ input{
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	width:100%;
 	max-width:100%;
-	padding:0 -20px 0;
+	margin:10px 0 20px;
+	padding:5px;
+	box-sizing: border-box;
+
 	
 }
 div.gallery {
-    margin: 5px;
+    margin: 0 20px 20px;
     border: 1px solid #ccc;
     float: left;
-    width: 300px;
+    width: 250px;
     height:auto;
+    position:relative;
 }
 
 div.gallery:hover {
     border: 1px solid #4aaaa5;
+    opacity: .75;
 }
 
 div.gallery img {
@@ -161,13 +173,19 @@ div.desc {
     background-color: #4aaaa5;
     color:#ffffff;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	
+	position:absolute;
+	width:100%;
+	max-width:100%;
+	bottom:33%;
+	height:50px;
+	line-height: 50px;
 }
 footer {
-    position: relative;
-    bottom:0;
+    position: absolute;
+    bottom:20px;
     height: 100px;
-    width: 100%;
+    width: 960px;
+    max-width: 960px;
     background-color: #777777;
     color:#cccccc;
 	clear:both;
@@ -176,6 +194,8 @@ footer {
 	border-top-color:#4aaaa5;
 	border-top-style:solid;
 	border-width: 4px;
-	margin:20px auto;
+	margin-top:50px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	
 }
 
